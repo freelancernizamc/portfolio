@@ -1,0 +1,129 @@
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: tracking-in-expand 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Text animation */
+/* Google Fonts */
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+Global */
+/* html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255, 255, 255, .75);
+    font-family: 'Anonymous Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(25, 25, 25);
+} */
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+/* Testimonial */
+.slider {
+    width: 95%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-ana {
+    height: 500px;
+}
+
+.slide-ana>div {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s;
+}
+
+@media (min-width: 300px) and (max-width: 884px) {
+    .slider {
+        height: 650px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider {
+        height: 381px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .slider {
+        height: 379px;
+    }
+}
